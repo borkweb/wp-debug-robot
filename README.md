@@ -2,6 +2,18 @@
 An unobtrusive debugging tool for WordPress
 
 ## Description
+Have you ever wanted to get debug output sent to you from WordPress without interrupting the flow of the page?  
+Do you ever wish you could get debug output from _other users'_ sessions so you don't have to:
+
+- Log in as them
+- Asking them to look at debug output themselves (bleh)
+- Or try in vain to re-create their issue
+
+This plugin allows you to send debug messages via UDP to a [Jabber Bot](https://github.com/borkweb/jabberbot) that can then route
+the debug information to your IM client.
+
+_Note: This plugin sends the messages via UDP.  The receiving end doesn't necessarily need to be a Jabber bot...it could be anything you want
+(e.g. email bot, logger, whatever).  My implementation is a Jabber Bot on my local dev environment :)_
 
 ## Installation
 1. Upload the `wp-debug-robot` folder to your plugins directory (e.g. `wp-content/plugins`)
