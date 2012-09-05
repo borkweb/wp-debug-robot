@@ -1,4 +1,4 @@
-# Debug Robot
+# WP Debug Robot
 An unobtrusive debugging tool for WordPress
 
 ## Description
