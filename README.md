@@ -17,8 +17,8 @@ To send debug messages, simply call:
 
 `do_action( 'debug_robot', $message [, $target ]);`
 
-**$message**: Message to send to your jabber bot.
-**$target**: _(optional)_ Email address that your jabber bot will route the message to.
+- **$message**: Message to send to your jabber bot.
+- **$target**: _(optional)_ Email address that your jabber bot will route the message to.
 
 To receive debug messages, you will need to have:
 
