@@ -28,4 +28,4 @@ To receive debug messages, you will need to have:
 - You must be signed into Google Talk in some way shape or form so that your jabber bot can IM you.
 
 ## Credits
-This code was largely written by @abackstrom with some additions by me while we worked at @PlymouthState. I then ported it into a WordPress plugin.
+This code was largely written by [@abackstrom](https://github.com/abackstrom) with some additions by me while we worked at [@PlymouthState](https://github.com/PlymouthState). I then ported it into a WordPress plugin.
