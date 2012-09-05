@@ -39,5 +39,8 @@ To receive debug messages, you will need to have:
 - You must have friended your robot's jabber account with another jabber account (e.g. your Google account).
 - You must be signed into Google Talk in some way shape or form so that your jabber bot can IM you.
 
+_Note: If your Jabber Bot isn't running, no worries.  UDP doesn't wait for a response so it won't impact your WordPress instance...you just won't get the messages that
+are sent until your bot is running :)_
+
 ## Credits
 This code was largely written by [@abackstrom](https://github.com/abackstrom) with some additions by me while we worked at [@PlymouthState](https://github.com/PlymouthState). I then ported it into a WordPress plugin.
