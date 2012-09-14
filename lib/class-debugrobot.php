@@ -4,16 +4,20 @@ class DebugRobot {
 	static $instance = null;
 
 	public static function robot_from_config() {
-		global $debug_robot_config;
 
-		if ( ! $debug_robot_config->host ) {
+		$config = new stdClass;
+		$config->host = get_option( 'debug_robot_host' );
+		$config->port = get_option( 'debug_robot_port' );
+		$config->target = get_option( 'debug_robot_target' );
+
+		if ( ! $config->host ) {
 			return new DebugRobot_Dummy( null, null );
 		}//end if
 
-		$robot = new DebugRobot_JsonRobot( $debug_robot_config->host, $debug_robot_config->port );
+		$robot = new DebugRobot_JsonRobot( $config->host, $config->port );
 
-		if ( $debug_robot_config->target ) {
-			$robot->set_data( 'target', $debug_robot_config->target );
+		if ( $config->target ) {
+			$robot->set_data( 'target', $config->target );
 		}//end if
 
 		return $robot;

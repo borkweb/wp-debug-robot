@@ -17,9 +17,9 @@ _Note: This plugin sends the messages via UDP.  The receiving end doesn't necess
 
 ## Installation
 1. Upload the `wp-debug-robot` folder to your plugins directory (e.g. `wp-content/plugins`)
-1. Copy `wp-debug-robot/config.sample.php` to `wp-debug-robot/config.php`
-1. Edit `config.php` to set the `host` and `port` of the server you wish to send debug messages to.
-1. Edit `config.php` to set the default `target` email address that debug messages will be routed to by a Jabber bot.
+1. Got to Settings > Debug Robot and configure your settings.  
+1. Set the `host` and `port` of the server you wish to send debug messages to.
+1. Set the default `target` email address that debug messages will be routed to by a Jabber bot.
 1. Configure a [Jabber Bot](https://github.com/borkweb/jabberbot) 
 
 _Note: you will also need a dummy jabber email address to act as your jabber bot.  I created one with Google Apps called robot@mydomain.com then friended that account with my primary Google account._

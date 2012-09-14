@@ -19,6 +19,11 @@ require_once __DIR__ . '/lib/class-debugrobot-dummy.php';
 require_once __DIR__ . '/lib/class-debugrobot-baserobot.php';
 require_once __DIR__ . '/lib/class-debugrobot-jsonrobot.php';
 require_once __DIR__ . '/lib/class-debugrobot.php';
+require_once __DIR__ . '/lib/class-debugrobot-admin.php';
 require_once __DIR__ . '/config.php';
 
 add_action( 'debug_robot', array( 'DebugRobot', 'send' ) );
+
+if ( is_admin() ) {
+	$debug_robot_admin = new DebugRobot_Admin;
+}//end if
