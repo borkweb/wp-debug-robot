@@ -8,13 +8,14 @@ class DebugRobot {
 		$config = new stdClass;
 		$config->host = get_option( 'debug_robot_host' );
 		$config->port = get_option( 'debug_robot_port' );
+		$config->server = get_option( 'debug_robot_server' );
 		$config->target = get_option( 'debug_robot_target' );
 
 		if ( ! $config->host ) {
 			return new DebugRobot_Dummy( null, null );
 		}//end if
 
-		$robot = new DebugRobot_JsonRobot( $config->host, $config->port );
+		$robot = new DebugRobot_JsonRobot( $config->host, $config->port, $config->server );
 
 		if ( $config->target ) {
 			$robot->set_data( 'target', $config->target );
