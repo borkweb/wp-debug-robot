@@ -13,7 +13,7 @@ class DebugRobot_JsonRobot extends DebugRobot_BaseRobot {
 	 */
 	public $target;
 
-	public function __construct( $host, $port = 8888, $server ) {
+	public function __construct( $host, $port = 8888, $server = null ) {
 		$this->server = $server ?: gethostname();
 
 		parent::__construct( $host, $port );
