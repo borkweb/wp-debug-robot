@@ -53,7 +53,7 @@ _Note: you will also need a dummy jabber email address to act as your jabber bot
 == Frequently Asked Questions ==
 
 = You mention a jabber bot.  What is that all about? =
-This plugin allows your WordPress installation to send UDP packets containing debug information to...some place.  The jabber bot is a service that runs on a the location you configure your Debug Settings to point to.  When doing development on my localhost, I can run my jabberbot on my localhost as well so my dev environment sends debug info to the same machine it is running on.  Another example that I have running: There is a machine in my office with the jabberbot running at all times.  My co-workers at GigaOM and me - as long as we're on our local network - can use the jabber bot by pointing their Debug Robot settings to the machine running the bot!  Super easy.
+This plugin allows your WordPress installation to send UDP packets containing debug information to...some place.  The jabber bot is a service that runs on a the location you configure your Debug Settings to point to.  When doing development on my localhost, I can run my jabberbot on my localhost as well so my dev environment sends debug info to the same machine it is running on.  Another example that I have running: There is a machine in my office with the jabberbot running at all times.  My co-workers at Gigaom and me - as long as we're on our local network - can use the jabber bot by pointing their Debug Robot settings to the machine running the bot!  Super easy.
 
 == Credits ==
 This code was largely written by [@abackstrom](https://github.com/abackstrom) with some additions by me while we worked at [@PlymouthState](https://github.com/PlymouthState). I then ported it into a WordPress plugin.
