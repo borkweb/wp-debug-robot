@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Debug Robot
-Version: 0.1
+Version: 1.0
 Plugin URI: http://borkweb.com
 Description: Send debug output via UDP packets to a nodejs jabber bot that will IM you.
 Author: Matthew Batchelder
