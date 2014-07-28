@@ -18,11 +18,12 @@ require_once __DIR__ . '/lib/class-debugrobot-robotinterface.php';
 require_once __DIR__ . '/lib/class-debugrobot-dummy.php';
 require_once __DIR__ . '/lib/class-debugrobot-baserobot.php';
 require_once __DIR__ . '/lib/class-debugrobot-jsonrobot.php';
+require_once __DIR__ . '/lib/class-debugrobot-hipchatrobot.php';
 require_once __DIR__ . '/lib/class-debugrobot.php';
 require_once __DIR__ . '/lib/class-debugrobot-admin.php';
 
 add_action( 'debug_robot', array( 'DebugRobot', 'send' ) );
 
 if ( is_admin() ) {
-	$debug_robot_admin = new DebugRobot_Admin;
+	debugrobot_admin();
 }//end if
