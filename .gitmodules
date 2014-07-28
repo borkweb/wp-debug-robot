@@ -1,0 +1,3 @@
+[submodule "lib/external/hipchat-php"]
+	path = lib/external/hipchat-php
+	url = git@github.com:hipchat/hipchat-php.git
