@@ -18,6 +18,11 @@ _Note: This plugin sends the messages via UDP.  The receiving end doesn't necess
 ## Installation
 1. Upload the `wp-debug-robot` folder to your plugins directory (e.g. `wp-content/plugins`)
 1. Got to Settings > Debug Robot and configure your settings.  
+
+### HipChat
+1. Set the `Api Key` and `Room` for your HipChat server
+
+### Jabber
 1. Set the `host` and `port` of the server you wish to send debug messages to.
 1. Set the default `target` email address that debug messages will be routed to by a Jabber bot.
 1. Configure a [Jabber Bot](https://github.com/borkweb/jabberbot) 
@@ -27,10 +32,10 @@ _Note: you will also need a dummy jabber email address to act as your jabber bot
 ## Usage
 To send debug messages, simply call:
 
-`do_action( 'debug_robot', $message [, $target ]);`
+`do_action( 'debug_robot', $message [, $color ]);`
 
 - **$message**: Message to send to your jabber bot.
-- **$target**: _(optional)_ Email address that your jabber bot will route the message to.
+- **$color**: _(optional)_ HipChat color you wish to send your message as (yellow, red, green, gray, purple, random)
 
 To receive debug messages, you will need to have:
 
